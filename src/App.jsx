@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 const cardImages = [
   { src: "/img/potion-1.png" },
@@ -23,11 +24,12 @@ function App() {
     setCards(shuffledCards);
     setTurns(0);
   };
+  console.log(cards, turns);
 
   return (
     <div className="App">
       <h1>Magic Match</h1>
-      <button>New game</button>
+      <button onClick={shuffleCards}>New game</button>
     </div>
   );
 }
