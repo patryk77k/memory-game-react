@@ -10,9 +10,6 @@
 ## 💻 Used Stuff:  
 - React
 - Java Script
-- Firebase Auth
-- Firebase Firestore
-- Firebase Storage
 
  <i> More Info in package.json</i>
 
@@ -20,28 +17,17 @@
 
 ## 🚀 Features: 
 
-- Register a new user with an avatar:
-        Implement a user registration system allowing the upload of an avatar image.
-        Store user data in a database along with the avatar image path.
+Card Shuffling: Cards are shuffled randomly at the start of the game using the shuffleCards() function. This function uses Math.random() to randomize the order of the cards.
 
-- Login & logout for new users:
-        Develop functionality for user login and logout.
-        Utilize authentication tokens or sessions to manage user login/logout sessions.
+Card Selection: Players can select cards by clicking on them. Two cards can be selected at a time (choiceOne and choiceTwo) using the handleChoice() function.
 
-- Create a task and assign it to a user:
-        Implement a feature to create tasks and associate them with specific users.
-        Store tasks in a database, linking them to the assigned user.
+Matching Logic: When two cards are selected, the app checks if they match. If the selected cards have the same image (src), they remain flipped. Otherwise, they flip back after a brief pause using setTimeout().
 
-- Allow marking a task as done only for users who are presently logged in (indicated by a green dot) and are assigned to the project.
+Turn Counter: The app keeps track of the number of turns taken by the player to complete the game.
 
-- Filter tasks by categories:
-        Develop a filtering mechanism enabling users to filter tasks based on categories.
-        Retrieve tasks from the database based on the selected category.
+Resetting the Game: Players can reset the game and start a new round by clicking the "New game" button. This button triggers the shuffleCards() function.
 
-- Add comments to a task:
-        Implement the ability to add comments to tasks.
-        Store comments in the database, associating them with the respective task.>
-
+User Interface: The game's user interface displays a title ("Magic Match"), a button to start a new game, a grid layout displaying the cards, and a counter showing the number of turns taken.
 ## 💻  Install:
   
 ```
